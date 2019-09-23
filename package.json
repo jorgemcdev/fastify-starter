@@ -1,0 +1,36 @@
+{
+  "name": "fastify-mongo-graphql",
+  "version": "1.0.0",
+  "description": "Fastify Starter",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node build/index.js",
+    "dev": "cross-env NODE_ENV=development nodemon --exec babel-node src/index.js",
+    "clean": "rimraf build",
+    "build": "npm run clean && babel src --out-dir build",
+    "eslint": "./node_modules/.bin/eslint ./src"
+  },
+  "keywords": [
+    "nodejs",
+    "fastify",
+    "eslint",
+    "airbnb"
+  ],
+  "author": "jorgemcdev",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "cross-env": "^6.0.0",
+    "fastify": "^2.6.0",
+    "rimraf": "^2.6.3"
+  }
+}
